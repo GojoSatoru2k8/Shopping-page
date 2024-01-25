@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    font-size: 16px;
+    background: -webkit-linear-gradient(to right, #330066, #62f5dc);
+    background: linear-gradient(to left, #1267e6, #04f6ce);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+
+#cart-number {
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 100px;
+}
+
+.goods {
+    height: 250px;
+    background-color: rgb(244, 255, 255);
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 2.5px #330066;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tieude {
+    margin: 0;
+}
+
+@media only screen and (max-width:5000px) {
+.section {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+}
+
+.section .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2px;
+}
+
+button {
+    border-radius: 10px;
+}
+
+.goods:hover {
+    border-color: goldenrod;
+    box-shadow: 10px 10px 5px goldenrod;
+}
+
+.goods h5 p {
+    margin: 0;
+}

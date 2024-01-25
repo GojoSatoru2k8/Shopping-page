@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sộp pe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logos">
+                <a href="./index.html">
+                    <img src="./logo-shopee.png" alt="">
+                </a>
+                <a href="./index.html">Home</a>
+                <a href="">About</a>
+            </div>
+            <div class="buy">
+                <button>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Giỏ hàng</span>
+                    <span id="cart-number">0</span>
+                </button>
+            </div>
+            </div>
+        </div>
+        <!-- Title -->
+        <div class="title">
+            <h1 class="tieude">Welcome to Sộp pe</h1>
+            <p class="tieude">Hàng gì cũng có :></p>
+        </div>
+        <!-- Section -->
+        <div class="section">
+            <div class="row row1">
+                <div class="goods" id="dttm_1">
+                    <img src="https://images.fpt.shop/unsafe/fit-in/665x374/filters:quality(100):fill(white)/fptshop.com.vn/Uploads/Originals/2023/10/12/638327041739564335_iphone-15-pro-max-5.jpg"
+                        alt="">
+                    <h5>Iphone 15 Pro Max</h5>
+                    <p>34.990.000 vnđ</p>
+                    <button onclick="AddToCarts('dttm_1')">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="goods" id="dttm_2">
+                    <img src="https://images.samsung.com/is/image/samsung/p6pim/vn/2307/gallery/vn-galaxy-z-flip5-f731-sm-f731bliexxv-thumb-537229999?imwidth=480"
+                        alt="">
+                    <h5>Samsung Fold 5</h5>
+                    <p>32.000.000 vnđ</p>
+                    <button onclick="AddToCarts('dttm_2')">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="goods" id="dttm_3">
+                    <img src="https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/398004285_1077483213603979_7961382945170231146_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=l12-Xj9zPO8AX8x3NiE&_nc_ht=scontent.fsgn2-6.fna&oh=00_AfDZFnuZscS0OlelW-PAVYbKP7fd18481C8YstrQRImlVQ&oe=65B474B9"
+                        alt="">
+                    <h5>Như Quỳnh</h5>
+                    <p>Vô giá !!!</p>
+                    <button onclick="AddToCarts('dttm_3')">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="goods" id="dttm_4">
+                    <img src="https://www.profile-forme.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fecommerce2021%2Fimage%2Fupload%2Fv1699462916%2Ftai-drop_vd08mi.jpg&w=2048&q=75"
+                        alt="">
+                    <h5>Nguyễn Tiến Tài</h5>
+                    <p>Vô giá !!!</p>
+                    <button onclick="AddToCarts('dttm_4')">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <div class="row row2">
+                <div class="goods" id="dttm_5">
+                    <img src="https://images.fpt.shop/unsafe/fit-in/960x640/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2023/9/13/638302015849272512_iPhone_15_Pink_Pure_Back_iPhone_15_Pink_Pure_Front_2up_Screen__USEN.jpg" alt="">
+                    <h5>Iphone 15</h5>
+                    <p>30.990.000 vnđ</p>
+                    <button onclick="AddToCarts('dttm_5')">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="goods" id="dttm_6">
+                    <img src="https://images.fpt.shop/unsafe/fit-in/960x640/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2023/9/13/638302015849272512_iPhone_15_Pink_Pure_Back_iPhone_15_Pink_Pure_Front_2up_Screen__USEN.jpg" alt="">
+                    <h5>Iphone 15</h5>
+                    <p>30.990.000 vnđ</p>
+                    <button onclick="AddToCarts('dttm_6')">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="goods" id="dttm_7">
+                    <img src="https://images.fpt.shop/unsafe/fit-in/960x640/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2023/9/13/638302015849272512_iPhone_15_Pink_Pure_Back_iPhone_15_Pink_Pure_Front_2up_Screen__USEN.jpg" alt="">
+                    <h5>Iphone 15</h5>
+                    <p>30.990.000 vnđ</p>
+                    <button onclick="AddToCarts('dttm_7')">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="goods" id="dttm_8">
+                    <img src="https://images.fpt.shop/unsafe/fit-in/960x640/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2023/9/13/638302015849272512_iPhone_15_Pink_Pure_Back_iPhone_15_Pink_Pure_Front_2up_Screen__USEN.jpg" alt="">
+                    <h5>Iphone 15</h5>
+                    <p>30.990.000 vnđ</p>
+                    <button onclick="AddToCarts('dttm_8')">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
